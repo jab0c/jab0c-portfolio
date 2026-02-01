@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* dark + purple theme (professional) */
+:root{
+    --bg: #07060b;
+    --card: rgba(255,255,255,0.06);
+    --card2: rgba(255,255,255,0.04);
+    --border: rgba(255,255,255,0.10);
+    --text: rgba(255,255,255,0.92);
+    --muted: rgba(255,255,255,0.65);
+    --accent: #8b5cf6;
+}
+
+html, body { height: 100%; }
+body {
+    color: var(--text);
+    background:
+            radial-gradient(1200px 800px at 70% 10%, rgba(139,92,246,0.22), transparent 60%),
+            radial-gradient(900px 700px at 10% 30%, rgba(59,130,246,0.12), transparent 55%),
+            var(--bg);
+}
