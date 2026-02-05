@@ -1,6 +1,15 @@
 ---
 import "../styles/global.css";
-const { title = "jab0c", description = "jab0c — portfolio" } = Astro.props;
+
+const {
+    title = "jab0c — portfolio",
+    description = "Modern developer portfolio.",
+    image = "/og.png",
+} = Astro.props;
+
+const site = Astro.site ?? new URL("https://jab0c.com");
+const canonicalUrl = new URL(Astro.url.pathname, site).toString();
+const ogImageUrl = new URL(image, site).toString();
 ---
 <!doctype html>
 <html lang="en">
@@ -8,7 +17,21 @@ const { title = "jab0c", description = "jab0c — portfolio" } = Astro.props;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
+    <meta name="theme-color" content="#0b0b10" />
     <title>{title}</title>
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:alt" content="jab0c logo" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
 </head>
 <body class="min-h-screen">
 <div class="bg-canvas" aria-hidden="true"></div>
