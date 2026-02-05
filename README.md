@@ -1,69 +1,30 @@
-# jab0c.com — Portfolio
+# jab0c-portfolio
 
-Modern developer portfolio built with **Astro** + **Tailwind CSS**, designed to be fast, clean, and recruiter-friendly.
+Small, clean portfolio site built with Astro and Tailwind CSS.
 
-## ✨ Highlights
+## Why this exists
+This repo is my public home base. It keeps my work easy to view, easy to update, and fast to load. If you are learning, feel free to look around.
 
-* Dark, minimal UI with subtle purple accent
-* Fully responsive layout
-* Component-based structure (easy to extend)
-* Optimized assets (WebP-ready)
+## Quick start
+1. Install deps: `npm install`
+2. Run locally: `npm run dev`
+3. Open `http://localhost:4321`
 
-## 🧱 Tech Stack
+## Build and run
+- Build: `npm run build`
+- Preview: `npm run preview`
 
-* **Astro**
-* **Tailwind CSS**
-* **TypeScript**
-* Deployment target: **Cloudflare Pages**
+## Tech
+- Astro
+- Tailwind CSS
+- TypeScript
 
-## 🚀 Getting Started
+## Project structure (short)
+- `public/`: static files
+- `src/components/`: UI blocks
+- `src/data/`: site content
+- `src/pages/`: routes
+- `src/styles/`: global styles
 
-### Install
-
-```bash
-npm install
-```
-
-### Run locally
-
-```bash
-npm run dev
-```
-
-Then open: `http://localhost:4321`
-
-### Build
-
-```bash
-npm run build
-```
-
-### Preview build
-
-```bash
-npm run preview
-```
-
-## 📁 Project Structure (simplified)
-
-```text
-/
-├── public/            # Static files (avatar, favicon, CV)
-├── src/
-│   ├── components/    # UI building blocks (Navbar, ProjectCard, etc.)
-│   ├── layouts/       # Base layout(s)
-│   ├── pages/         # Routes (index.astro)
-│   ├── styles/        # Global styles / theme tokens
-│   └── data/          # Content (projects, skills, links)
-└── astro.config.mjs
-```
-
-## 🔗 Links
-
-* Live: [https://www.jab0c.com](https://www.jab0c.com)
-* GitHub: (add)
-* LinkedIn: (add)
-
-## 📝 License
-
-Personal portfolio — please do not copy design/content 1:1.
+## License
+Use at your own risk. Please do not copy or rebrand. See `LICENSE`.

@@ -1,0 +1,15 @@
+---
+import SectionHeader from "./SectionHeader.astro";
+import { skills } from "../data/content";
+import SectionShell from "./SectionShell.astro";
+---
+<SectionShell id="skills" class="mx-auto max-w-6xl px-4 pt-14">
+    <SectionHeader title="Skills" subtitle="Tools I’m comfortable shipping with." />
+    <div class="flex flex-wrap gap-2">
+        {skills.map((s) => (
+                <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-sm text-[color:var(--muted)]">
+        {s}
+      </span>
+        ))}
+    </div>
+</SectionShell>

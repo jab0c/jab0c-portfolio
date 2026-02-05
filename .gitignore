@@ -1,12 +1,29 @@
-# Node / build
+# Node
 node_modules/
 dist/
 .astro/
-*.log
+.npm/
+.env
+.env.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/
 
 # OS
 .DS_Store
-
-# IDEs
-.idea/
-.vscode/
+Thumbs.db

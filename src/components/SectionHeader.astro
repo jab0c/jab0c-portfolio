@@ -1,0 +1,7 @@
+---
+const { title, subtitle } = Astro.props;
+---
+<div class="mb-6">
+    <h2 class="text-2xl font-bold">{title}</h2>
+    {subtitle && <p class="mt-2 text-sm text-[color:var(--muted)]">{subtitle}</p>}
+</div>

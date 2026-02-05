@@ -1,0 +1,26 @@
+---
+import { site } from "../data/site";
+---
+<footer id="contact" class="mx-auto max-w-6xl px-4 pt-14 pb-16">
+    <div class="rounded-3xl border border-[color:var(--border)] bg-[color:var(--card2)] p-8 md:p-10">
+        <h2 class="text-2xl font-bold">Let’s talk.</h2>
+        <p class="mt-2 text-sm text-[color:var(--muted)]">
+            Open to Switzerland roles, remote work, and meaningful collaborations. If you want to build something or just connect, reach out.
+        </p>
+
+        <div class="mt-6 flex flex-wrap gap-3">
+            <a class="rounded-xl bg-[color:var(--accent)] px-4 py-2 text-sm font-semibold text-black"
+               href={`mailto:${site.email}`}>
+                Email me
+            </a>
+            <a class="rounded-xl border border-[color:var(--border)] bg-[color:var(--card)] px-4 py-2 text-sm hover:bg-white/10 transition"
+               href={site.links.github} target="_blank" rel="noreferrer">
+                GitHub
+            </a>
+            <a class="rounded-xl border border-[color:var(--border)] bg-[color:var(--card)] px-4 py-2 text-sm hover:bg-white/10 transition"
+               href={site.links.linkedin} target="_blank" rel="noreferrer">
+                LinkedIn
+            </a>
+        </div>
+    </div>
+</footer>
